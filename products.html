@@ -1,0 +1,2099 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AAS Agro Products</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="icon" type="image/png" href="images/logo.png">
+
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header id="navbar"
+        class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-lg shadow-md z-50 transition-all duration-300">
+
+        <nav class="max-w-7xl mx-auto">
+
+            <div class="flex items-center justify-between h-28 px-5 lg:px-8">
+
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3">
+
+                    <img src="images/navbar1.png" alt="Logo" class="h-32 w-auto object-contain">
+
+
+                </a>
+
+
+                <!-- Desktop Menu -->
+                <ul class="hidden lg:flex items-center gap-9 font-medium">
+
+                    <li>
+                        <a href="index.html" class="text-green-800 hover:text-green-600 transition duration-300">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="text-gray-700 hover:text-green-600 transition duration-300">
+                            About
+                        </a>
+                    </li>
+
+
+                    <!-- Dropdown -->
+                    <li class="relative group">
+
+                        <button class="flex items-center gap-1 text-gray-700 hover:text-green-600 transition">
+
+                            <a href="Products.html" class="text-gray-700 hover:text-green-600 transition duration-300">
+                                Products
+                            </a>
+
+                            <svg class="w-4 h-4 transition group-hover:rotate-180" fill="none" stroke="currentColor"
+                                stroke-width="2" viewBox="0 0 24 24">
+
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+
+                        </button>
+
+                        <!-- Dropdown -->
+                        <div
+                            class="absolute left-0 top-full mt-5 w-72 bg-white rounded-2xl shadow-2xl opacity-0 invisible group-hover:visible group-hover:opacity-100 transition duration-300 overflow-hidden">
+
+                            <a href="#" class="block px-6 py-4 hover:bg-green-50 border-b">
+                                Tamarind with Seeds
+                            </a>
+
+                            <a href="#" class="block px-6 py-4 hover:bg-green-50 border-b">
+                                Tamarind without Seeds
+                            </a>
+
+                            <a href="#" class="block px-6 py-4 hover:bg-green-50 border-b">
+                                Tamarind Flowers
+                            </a>
+
+                            <a href="#" class="block px-6 py-4 hover:bg-green-50 border-b">
+                                Maize
+                            </a>
+
+                            <a href="#" class="block px-6 py-4 hover:bg-green-50 border-b">
+                                Soapnuts
+                            </a>
+
+                            <a href="#" class="block px-6 py-4 hover:bg-green-50">
+                                Jowar (Sorghum)
+                            </a>
+
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <a href="whyus.html" class="text-gray-700 hover:text-green-600 transition">
+                            Why Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="text-gray-700 hover:text-green-600 transition">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+
+
+                <!-- Right Side -->
+                <div class="hidden lg:flex items-center gap-4">
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/918074303825" target="_blank"
+                        class="w-11 h-11 rounded-full bg-green-600 hover:bg-green-700 text-white flex items-center justify-center">
+
+                        <i class="fab fa-whatsapp text-xl"></i>
+
+                    </a>
+
+                    <!-- Button -->
+                    <a href="contact.html"
+                        class="px-6 py-3 rounded-full bg-gradient-to-r from-green-700 to-lime-600 text-white font-semibold hover:scale-105 transition">
+
+                        Get Quote
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- Mobile Button -->
+                <button id="menuBtn" class="lg:hidden">
+
+                    <svg class="w-8 h-8 text-green-800" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+
+                    </svg>
+
+                </button>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <!--MOBILE MENU-->
+    <div id="mobileMenu"
+        class="fixed top-0 right-[-100%] w-80 h-full bg-white z-[999] transition-all duration-500 shadow-2xl">
+
+        <div class="flex justify-between items-center p-6 border-b">
+
+            <h2 class="font-bold text-xl text-green-800">
+                Menu
+            </h2>
+
+            <button id="closeMenu">
+
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+
+                </svg>
+
+            </button>
+
+        </div>
+
+
+        <div class="flex flex-col">
+
+            <a href="index.html" class="px-7 py-5 border-b hover:bg-green-50">Home</a>
+            <a href="about.html" class="px-7 py-5 border-b hover:bg-green-50">About</a>
+            <a href="products.html" class="px-7 py-5 border-b hover:bg-green-50">Products</a>
+            <a href="whyus.html" class="px-7 py-5 border-b hover:bg-green-50">Why Us</a>
+            <a href="contact.html" class="px-7 py-5 border-b hover:bg-green-50">Contact</a>
+
+            <div class="p-6">
+
+                <a href="contact.html"
+                    class="block text-center py-4 rounded-full bg-green-700 text-white font-semibold">
+
+                    Get Quote
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--PRODUCTS HERO-->
+    <section class="relative pt-32 pb-28 min-h-[70vh] flex items-center justify-center overflow-hidden">
+
+        <!-- Background Image -->
+        <img src="images/footer bg.png" alt="Products Banner" class="absolute inset-0 w-full h-full object-cover">
+
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-[#16351D]/90 via-[#16351D]/75 to-[#16351D]/90"></div>
+
+        <!-- Floating Shapes -->
+        <div class="absolute top-20 left-20 w-32 h-32 rounded-full bg-lime-300 blur-3xl"></div>
+        <!-- Content -->
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+
+            <!-- Badge -->
+            <span
+                class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold">
+
+                🌿 Premium Agricultural Products
+
+            </span>
+
+            <!-- Heading -->
+            <h1 class="mt-8 text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight">
+
+                Our
+
+                <span class="text-lime-300">
+
+                    Products
+
+                </span>
+
+            </h1>
+
+            <!-- Description -->
+            <p class="mt-8 text-lg md:text-xl text-gray-200 leading-9 max-w-3xl mx-auto">
+
+                Explore our premium range of naturally sourced agricultural products,
+                including Tamarind, Maize, Soapnuts, and Jowar. Every product is
+                carefully selected, hygienically packed, and supplied for both
+                domestic and international markets.
+
+            </p>
+
+            <!-- Buttons -->
+            <div class="flex flex-wrap justify-center gap-5 mt-10">
+
+                <a href="#products"
+                    class="px-8 py-4 rounded-full bg-green-600 hover:bg-green-700 text-white font-semibold shadow-xl hover:scale-105 transition duration-300">
+
+                    Explore Products
+
+                </a>
+
+                <a href="contact.html"
+                    class="px-8 py-4 rounded-full border-2 border-white text-white font-semibold hover:bg-white hover:text-green-700 transition duration-300">
+
+                    Send Enquiry
+
+                </a>
+
+            </div>
+
+            <!-- Breadcrumb -->
+            <div class="mt-10 flex justify-center items-center gap-3 text-white/80 text-sm">
+
+                <a href="index.html" class="hover:text-lime-300 transition">
+
+                    Home
+
+                </a>
+
+                <span>/</span>
+
+                <span class="text-lime-300 font-semibold">
+
+                    Products
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--PRODUCT CATEGORIES-->
+    <section id="products" class="relative py-24 bg-[#F8FCF5] overflow-hidden">
+
+        <!-- Background Decoration -->
+        <div class="absolute -top-20 -left-20 w-72 h-72 bg-green-300 rounded-full blur-3xl opacity-40"></div>
+        <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-lime-300 rounded-full blur-3xl opacity-40"></div>
+
+        <img src="images/left-leaf.png" class="absolute left-0 top-20 w-44  hidden lg:block">
+
+        <img src="images/right-top leaf.png" class="absolute right-0 bottom-20 w-44 hidden lg:block">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Heading -->
+
+            <div class="text-center max-w-3xl mx-auto">
+
+                <span
+                    class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-green-100 text-green-700 font-semibold">
+
+                    🌿 Product Categories
+
+                </span>
+
+                <h2 class="mt-6 text-4xl lg:text-5xl font-bold text-gray-900">
+
+                    Explore Our
+
+                    <span class="text-green-700">
+
+                        Premium Products
+
+                    </span>
+
+                </h2>
+
+                <p class="mt-6 text-lg text-gray-600 leading-8">
+
+                    We supply carefully sourced agricultural products for domestic
+                    and export markets, ensuring premium quality, freshness,
+                    hygienic packaging, and reliable delivery.
+
+                </p>
+
+            </div>
+
+            <!-- Categories -->
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 mt-16">
+
+                <!-- Tamarind with Seeds -->
+
+                <a href="#tamarind-seeds"
+                    class="group bg-white rounded-3xl p-6 text-center shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-500">
+
+                    <img src="pdt-img/icon-tamarind.jpg" class="w-16 h-16 mx-auto mb-5">
+
+                    <h3 class="font-bold text-lg">
+
+                        Tamarind
+
+                        <br>
+
+                        With Seeds
+
+                    </h3>
+
+                </a>
+
+                <!-- Tamarind without Seeds -->
+
+                <a href="#tamarind-without-seeds"
+                    class="group bg-white rounded-3xl p-6 text-center shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-500">
+
+                    <img src="pdt-img/tamarindseedless.png" class="w-16 h-16 mx-auto mb-5">
+
+                    <h3 class="font-bold text-lg">
+
+                        Tamarind
+
+                        <br>
+
+                        Without Seeds
+
+                    </h3>
+
+                </a>
+
+                <!-- Flowers -->
+
+                <a href="#tamarind-flowers"
+                    class="group bg-white rounded-3xl p-6 text-center shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-500">
+
+                    <img src="pdt-img/icon-flower.png" class="w-16 h-16 mx-auto mb-5">
+
+                    <h3 class="font-bold text-lg">
+
+                        Tamarind
+
+                        <br>
+
+                        Flowers
+
+                    </h3>
+
+                </a>
+
+                <!-- Maize -->
+
+                <a href="#maize"
+                    class="group bg-white rounded-3xl p-6 text-center shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-500">
+
+                    <img src="pdt-img/maize.png" class="w-16 h-16 mx-auto mb-5">
+
+                    <h3 class="font-bold text-lg">
+
+                        Maize
+
+                    </h3>
+
+                </a>
+
+                <!-- Soapnuts -->
+
+                <a href="#soapnuts"
+                    class="group bg-white rounded-3xl p-6 text-center shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-500">
+
+                    <img src="pdt-img/soapnut.png" class="w-16 h-16 mx-auto mb-5">
+
+                    <h3 class="font-bold text-lg">
+
+                        Soapnuts
+
+                    </h3>
+
+                </a>
+
+                <!-- Jowar -->
+
+                <a href="#jowar"
+                    class="group bg-white rounded-3xl p-6 text-center shadow-lg hover:-translate-y-2 hover:shadow-2xl duration-500">
+
+                    <img src="pdt-img/icon-jowar.png" class="w-16 h-16 mx-auto mb-5">
+
+                    <h3 class="font-bold text-lg">
+
+                        Jowar
+
+                        <br>
+
+                        (Sorghum)
+
+                    </h3>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PRODUCT 01-->
+    <section id="tamarind-seeds" class="relative py-24 bg-white overflow-hidden">
+
+        <!-- Background Decoration -->
+        <div class="absolute -top-20 -left-20 w-72 h-72 bg-green-100 rounded-full blur-3xl opacity-40"></div>
+        <img src="pdt-img/left-leaf.png" class="absolute left-0 top-50 w-92 opacity-15 hidden lg:block">
+
+        <img src="images/left-leaf.png" class="absolute left-0 top-0 w-52 hidden lg:block">
+
+
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                <!-- Product Image -->
+
+                <div class="relative">
+
+                    <!-- Main Image -->
+
+                    <div class="rounded-[40px] overflow-hidden shadow-2xl group">
+
+                        <img src="images/Tamarind with Seeds.jpg" alt="Tamarind with Seeds"
+                            class="w-full h-[620px] object-cover group-hover:scale-105 duration-700">
+
+                    </div>
+
+                    <!-- Floating Badge -->
+
+                    <div class="absolute top-8 left-8 bg-white rounded-3xl shadow-xl px-6 py-5">
+
+                        <div class="flex items-center gap-4">
+
+                            <div
+                                class="w-14 h-14 rounded-full bg-green-600 flex items-center justify-center text-white text-2xl">
+
+                                🌿
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-bold text-green-700">
+
+                                    Export Grade
+
+                                </h4>
+
+                                <p class="text-gray-500 text-sm">
+
+                                    Premium Quality
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Bottom Card -->
+
+                    <div class="absolute -bottom-8 right-8 bg-white rounded-3xl shadow-2xl px-8 py-6">
+
+                        <h4 class="text-xl font-bold text-gray-900">
+
+                            100% Natural
+
+                        </h4>
+
+                        <p class="text-gray-600 mt-2">
+
+                            Freshly sourced from trusted farms.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Content -->
+
+                <div>
+
+                    <span class="inline-flex px-5 py-2 rounded-full bg-green-100 text-green-700 font-semibold">
+
+                        Tamarind Collection
+
+                    </span>
+
+                    <h2 class="mt-6 text-4xl lg:text-5xl font-bold text-gray-900">
+
+                        Tamarind
+
+                        <span class="text-green-700">
+
+                            With Seeds
+
+                        </span>
+
+                    </h2>
+
+                    <p class="mt-8 text-lg text-gray-600 leading-9">
+
+                        Our premium tamarind with seeds is naturally harvested,
+                        carefully sorted, and hygienically packed to preserve
+                        its authentic taste, freshness, and nutritional value.
+
+                        It is widely used in food processing, spice industries,
+                        restaurants, and export markets.
+
+                    </p>
+
+                    <!-- Features -->
+
+                    <div class="grid sm:grid-cols-2 gap-5 mt-10">
+
+                        <div class="flex items-center gap-4">
+
+                            <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
+
+                                ✔
+
+                            </div>
+
+                            <span class="font-medium">
+
+                                Premium Export Quality
+
+                            </span>
+
+                        </div>
+
+                        <div class="flex items-center gap-4">
+
+                            <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
+
+                                ✔
+
+                            </div>
+
+                            <span>
+
+                                Naturally Processed
+
+                            </span>
+
+                        </div>
+
+                        <div class="flex items-center gap-4">
+
+                            <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
+
+                                ✔
+
+                            </div>
+
+                            <span>
+
+                                Hygienic Packaging
+
+                            </span>
+
+                        </div>
+
+                        <div class="flex items-center gap-4">
+
+                            <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
+
+                                ✔
+
+                            </div>
+
+                            <span>
+
+                                Bulk Supply Available
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Information -->
+
+                    <div class="grid grid-cols-2 gap-6 mt-10">
+
+                        <div class="rounded-2xl bg-[#F8FCF5] p-6">
+
+                            <h5 class="font-bold text-green-700">
+
+                                Packaging
+
+                            </h5>
+
+                            <p class="text-gray-600 mt-2">
+
+                                5kg, 10kg, 25kg & Custom
+
+                            </p>
+
+                        </div>
+
+                        <div class="rounded-2xl bg-[#F8FCF5] p-6">
+
+                            <h5 class="font-bold text-green-700">
+
+                                Market
+
+                            </h5>
+
+                            <p class="text-gray-600 mt-2">
+
+                                Domestic & Export
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Buttons -->
+
+                    <div class="flex flex-wrap gap-5 mt-12">
+
+                        <a href="contact.html"
+                            class="px-8 py-4 rounded-full bg-green-700 text-white font-semibold hover:bg-green-800 transition">
+
+                            Send Enquiry
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--PRODUCT 02-->
+    <section id="tamarind-without-seeds" class="relative py-24 bg-[#F8FCF5] overflow-hidden">
+        <!-- Background Decoration -->
+        <div class="absolute -top-20 right-0 w-80 h-80 bg-lime-100 rounded-full blur-3xl opacity-40"></div>
+
+        <img src="images/right-top leaf.png" class="absolute right-0 top-10 w-full hidden lg:block">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+                <!-- LEFT CONTENT -->
+
+                <div>
+
+                    <span class="inline-flex px-5 py-2 rounded-full bg-green-100 text-green-700 font-semibold">
+
+                        Premium Agro Product
+
+                    </span>
+
+                    <h2 class="mt-6 text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+
+                        Tamarind
+
+                        <span class="text-green-700">
+
+                            Without Seeds
+
+                        </span>
+
+                    </h2>
+
+                    <p class="mt-8 text-lg text-gray-600 leading-9">
+
+                        Our seedless tamarind is carefully processed to remove seeds
+                        while preserving its rich flavour, natural colour, and soft
+                        texture. It is widely used in food processing, sauces,
+                        chutneys, ready-to-cook products, restaurants, and export
+                        markets.
+
+                    </p>
+
+                    <!-- Highlights -->
+
+                    <div class="grid sm:grid-cols-2 gap-5 mt-10">
+
+                        <div class="flex items-center gap-4">
+
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-700">
+
+                                ✔
+
+                            </div>
+
+                            <span>Seedless Processing</span>
+
+                        </div>
+
+                        <div class="flex items-center gap-4">
+
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-700">
+
+                                ✔
+
+                            </div>
+
+                            <span>Premium Export Grade</span>
+
+                        </div>
+
+                        <div class="flex items-center gap-4">
+
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-700">
+
+                                ✔
+
+                            </div>
+
+                            <span>Hygienic Packing</span>
+
+                        </div>
+
+                        <div class="flex items-center gap-4">
+
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-700">
+
+                                ✔
+
+                            </div>
+
+                            <span>Bulk Supply</span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Info -->
+
+                    <div class="grid grid-cols-2 gap-6 mt-10">
+
+                        <div class="bg-white rounded-2xl shadow-lg p-6">
+
+                            <h4 class="font-bold text-green-700">
+
+                                Packaging
+
+                            </h4>
+
+                            <p class="mt-2 text-gray-600">
+
+                                5kg • 10kg • 25kg • Custom
+
+                            </p>
+
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-lg p-6">
+
+                            <h4 class="font-bold text-green-700">
+
+                                Supply
+
+                            </h4>
+
+                            <p class="mt-2 text-gray-600">
+
+                                Domestic & Export
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CTA -->
+
+                    <div class="flex flex-wrap gap-5 mt-12">
+
+                        <a href="contact.html"
+                            class="px-8 py-4 rounded-full bg-green-700 text-white font-semibold hover:bg-green-800 transition">
+
+                            Send Enquiry
+
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT IMAGE -->
+
+                <div class="relative">
+
+                    <div class="rounded-[40px] overflow-hidden shadow-2xl group">
+
+                        <img src="images/Tamarind without seeds.jpg" alt="Tamarind Without Seeds"
+                            class="w-full h-[620px] object-cover group-hover:scale-105 duration-700">
+
+                    </div>
+
+                    <!-- Floating Top Card -->
+
+                    <div class="absolute top-8 right-8 bg-white rounded-3xl shadow-xl p-6">
+
+                        <div class="flex items-center gap-4">
+
+                            <div
+                                class="w-14 h-14 rounded-full bg-lime-500 flex items-center justify-center text-white text-2xl">
+
+                                🌿
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-bold text-green-700">
+
+                                    Food Grade
+
+                                </h4>
+
+                                <p class="text-sm text-gray-500">
+
+                                    Premium Quality
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Floating Bottom Card -->
+
+                    <div class="absolute -bottom-8 left-8 bg-white rounded-3xl shadow-2xl px-8 py-6">
+
+                        <h4 class="text-xl font-bold text-gray-900">
+
+                            100% Natural
+
+                        </h4>
+
+                        <p class="mt-2 text-gray-600">
+
+                            Fresh • Pure • Hygienic
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PRODUCT 03-->
+    <section id="tamarind-flowers"
+        class="relative py-24 overflow-hidden bg-gradient-to-br from-[#0B3D24] via-[#14532D] to-[#1B5E20]">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                <!-- Image -->
+
+                <div class="relative">
+
+                    <div class="rounded-[40px] overflow-hidden shadow-2xl">
+
+                        <img src="images/Tamarind Flower.jpg"
+                            class="w-full h-[650px] object-cover hover:scale-105 duration-700">
+
+                    </div>
+
+                    <!-- Floating Badge -->
+
+                    <div
+                        class="absolute top-8 left-8 bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-6">
+
+                        <h4 class="text-3xl font-bold text-green-700">
+
+                            🌸 Natural
+
+                        </h4>
+
+                        <p class="text-black/80 mt-2">
+
+                            Carefully Harvested
+
+                        </p>
+
+                    </div>
+
+                    <!-- Floating Badge -->
+
+                    <div class="absolute bottom-8 right-8 bg-white rounded-3xl shadow-xl px-8 py-6">
+
+                        <h3 class="text-green-700 font-bold text-2xl">
+
+                            Export Ready
+
+                        </h3>
+
+                        <p class="text-gray-600 mt-2">
+
+                            Hygienically Packed
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Content -->
+
+                <div>
+
+                    <span class="inline-flex px-5 py-2 rounded-full bg-white/10 border border-white/20 text-white">
+
+                        Premium Agro Product
+
+                    </span>
+
+                    <h2 class="mt-6 text-5xl font-bold text-white">
+
+                        Tamarind
+
+                        <span class="text-lime-300">
+
+                            Flowers
+
+                        </span>
+
+                    </h2>
+
+                    <p class="mt-8 text-lg leading-9 text-gray-200">
+
+                        Tamarind flowers are carefully collected from healthy trees
+                        and processed to maintain their freshness and natural aroma.
+                        They are widely used in traditional foods, herbal
+                        preparations, and specialty culinary applications.
+
+                    </p>
+
+                    <!-- Features -->
+
+                    <div class="grid sm:grid-cols-2 gap-6 mt-12">
+
+                        <div class="bg-white/10 backdrop-blur-xl rounded-2xl p-5 border border-white/10">
+
+                            🌿 Freshly Harvested
+
+                        </div>
+
+                        <div class="bg-white/10 backdrop-blur-xl rounded-2xl p-5 border border-white/10">
+
+                            📦 Hygienic Packing
+
+                        </div>
+
+                        <div class="bg-white/10 backdrop-blur-xl rounded-2xl p-5 border border-white/10">
+
+                            🌍 Export Quality
+
+                        </div>
+
+                        <div class="bg-white/10 backdrop-blur-xl rounded-2xl p-5 border border-white/10">
+
+                            🚚 Bulk Supply
+
+                        </div>
+
+                    </div>
+
+                    <!-- Buttons -->
+
+                    <div class="flex flex-wrap gap-5 mt-12">
+
+                        <a href="contact.html"
+                            class="px-8 py-4 rounded-full bg-lime-400 text-green-900 font-bold hover:bg-lime-300 duration-300">
+
+                            Send Enquiry
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PRODUCT 04-->
+    <section id="maize" class="relative py-24 bg-[#F9FCF7] overflow-hidden">
+        <!-- Decorative Background -->
+
+        <div class="absolute -top-20 left-0 w-80 h-80 bg-green-100 rounded-full blur-3xl opacity-40"></div>
+        <div class="absolute -bottom-20 right-0 w-96 h-96 bg-yellow-500 rounded-full blur-3xl opacity-40"></div>
+
+        <img src="images/pdt-side- leaf.png" class="absolute left-0 top-0 w-92 opacity-15 hidden lg:block">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+                <!-- LEFT IMAGE COLLAGE -->
+
+                <div class="relative">
+
+                    <!-- Main Image -->
+
+                    <div class="rounded-[40px] overflow-hidden shadow-2xl">
+
+                        <img src="images/maize.jpg" class="w-full h-[620px] object-cover hover:scale-105 duration-700">
+
+                    </div>
+
+                    <!-- Floating Badge -->
+
+                    <div class="absolute top-8 right-8 bg-white rounded-3xl shadow-xl px-8 py-6">
+
+                        <div class="flex items-center gap-4">
+
+                            <div class="w-14 h-14 rounded-full bg-yellow-400 flex items-center justify-center text-2xl">
+
+                                🌽
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-bold text-green-700">
+
+                                    Grade A
+
+                                </h4>
+
+                                <p class="text-gray-500">
+
+                                    Premium Quality
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT CONTENT -->
+
+                <div>
+
+                    <span class="inline-flex px-5 py-2 rounded-full bg-yellow-100 text-yellow-700 font-semibold">
+
+                        Premium Grain
+
+                    </span>
+
+                    <h2 class="mt-6 text-5xl font-bold text-gray-900">
+
+                        Fresh
+
+                        <span class="text-green-700">
+
+                            Maize
+
+                        </span>
+
+                    </h2>
+
+                    <p class="mt-8 text-lg leading-9 text-gray-600">
+
+                        We supply premium-quality maize sourced directly from trusted
+                        farms. Our maize is carefully cleaned, graded, and packed to
+                        preserve its freshness, nutritional value, and natural taste,
+                        making it ideal for food processing, animal feed, and export
+                        markets.
+
+                    </p>
+
+                    <!-- Premium Info Cards -->
+
+                    <div class="grid sm:grid-cols-2 gap-6 mt-10">
+
+                        <div class="bg-white rounded-3xl shadow-lg p-6">
+
+                            <h4 class="font-bold text-green-700">
+
+                                Moisture
+
+                            </h4>
+
+                            <p class="mt-3 text-gray-600">
+
+                                Carefully maintained for superior quality.
+
+                            </p>
+
+                        </div>
+
+                        <div class="bg-white rounded-3xl shadow-lg p-6">
+
+                            <h4 class="font-bold text-green-700">
+
+                                Packaging
+
+                            </h4>
+
+                            <p class="mt-3 text-gray-600">
+
+                                25kg, 50kg & Custom Bags.
+
+                            </p>
+
+                        </div>
+
+                        <div class="bg-white rounded-3xl shadow-lg p-6">
+
+                            <h4 class="font-bold text-green-700">
+
+                                Origin
+
+                            </h4>
+
+                            <p class="mt-3 text-gray-600">
+
+                                Andhra Pradesh, India
+
+                            </p>
+
+                        </div>
+
+                        <div class="bg-white rounded-3xl shadow-lg p-6">
+
+                            <h4 class="font-bold text-green-700">
+
+                                Supply
+
+                            </h4>
+
+                            <p class="mt-3 text-gray-600">
+
+                                Domestic & Global Export
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Features -->
+
+                    <div class="flex flex-wrap gap-4 mt-10">
+
+                        <span class="px-5 py-3 rounded-full bg-green-100 text-green-700">
+
+                            ✔ High Nutrition
+
+                        </span>
+
+                        <span class="px-5 py-3 rounded-full bg-green-100 text-green-700">
+
+                            ✔ Farm Fresh
+
+                        </span>
+
+                        <span class="px-5 py-3 rounded-full bg-green-100 text-green-700">
+
+                            ✔ Export Grade
+
+                        </span>
+
+                        <span class="px-5 py-3 rounded-full bg-green-100 text-green-700">
+
+                            ✔ Bulk Supply
+
+                        </span>
+
+                    </div>
+
+                    <!-- Buttons -->
+
+                    <div class="flex flex-wrap gap-5 mt-12">
+
+                        <a href="contact.html"
+                            class="px-8 py-4 rounded-full bg-green-700 text-white font-semibold hover:bg-green-800 duration-300">
+
+                            Send Enquiry
+
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--PRODUCT 05-->
+    <section id="soapnuts" class="relative py-28 bg-white overflow-hidden">
+
+        <!-- Background Decorations -->
+
+        <div class="absolute top-0 right-0 w-[450px] h-[450px] bg-green-100 rounded-full blur-3xl opacity-40"></div>
+        <div class="absolute bottom-0 left-0 w-[350px] h-[350px] bg-yellow-100 rounded-full blur-3xl opacity-40"></div>
+
+        <img src="images/right leaf.png" class="absolute right-0 bottom-10 w-full  hidden lg:block">
+
+        <div class=" relative max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+
+                <!-- Image Collage -->
+
+                <div class="relative">
+
+                    <!-- Main Image -->
+
+                    <div class="rounded-[40px] overflow-hidden shadow-2xl">
+
+                        <img src="images/Soapnuts.jpg" alt="Soapnuts"
+                            class="w-full h-[620px] object-cover hover:scale-105 duration-700">
+
+                    </div>
+
+
+                    <!-- Floating Badge -->
+
+                    <div class="absolute top-8 right-8 bg-white rounded-3xl shadow-xl px-6 py-5">
+
+                        <h3 class="text-2xl font-bold text-green-700">
+
+                            🌿 100% Natural
+
+                        </h3>
+
+                        <p class="mt-2 text-gray-600">
+
+                            Eco-Friendly Product
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Content -->
+
+                <div>
+
+                    <span
+                        class="inline-flex items-center px-5 py-2 rounded-full bg-green-100 text-green-700 font-semibold">
+
+                        Premium Natural Product
+
+                    </span>
+
+                    <h2 class="mt-6 text-4xl lg:text-5xl font-bold text-gray-900">
+
+                        Soapnuts
+
+                        <span class="text-green-700">
+
+                            (Reetha)
+
+                        </span>
+
+                    </h2>
+
+                    <p class="mt-8 text-lg leading-9 text-gray-900">
+
+                        Soapnuts are a natural, biodegradable cleaning product widely
+                        used in herbal formulations, organic detergents, shampoos,
+                        cosmetics, and traditional household cleaning. Carefully
+                        sourced and hygienically packed for domestic and export markets.
+
+                    </p>
+
+                    <!-- Premium Highlights -->
+
+                    <div class="space-y-5 mt-10">
+
+                        <div class="flex items-start gap-5">
+
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-700 text-xl">
+
+                                ✔
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-bold text-lg">
+
+                                    Naturally Dried
+
+                                </h4>
+
+                                <p class="text-gray-600 mt-1">
+
+                                    Preserves natural cleaning properties and freshness.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="flex items-start gap-5">
+
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-700 text-xl">
+
+                                🌍
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-bold text-lg">
+
+                                    Export Quality
+
+                                </h4>
+
+                                <p class="text-gray-600 mt-1">
+
+                                    Suitable for international buyers and bulk supply.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="flex items-start gap-5">
+
+                            <div
+                                class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-700 text-xl">
+
+                                📦
+
+                            </div>
+
+                            <div>
+
+                                <h4 class="font-bold text-lg">
+
+                                    Hygienic Packaging
+
+                                </h4>
+
+                                <p class="text-gray-600 mt-1">
+
+                                    Packed with care to maintain product quality during transit.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Product Info -->
+
+                    <div class="grid grid-cols-2 gap-6 mt-10">
+
+                        <div class="bg-[#F8FCF5] rounded-2xl p-6">
+
+                            <h5 class="font-bold text-green-700">
+
+                                Packaging
+
+                            </h5>
+
+                            <p class="mt-2 text-gray-600">
+
+                                10kg • 25kg • 50kg
+
+                            </p>
+
+                        </div>
+
+                        <div class="bg-[#F8FCF5] rounded-2xl p-6">
+
+                            <h5 class="font-bold text-green-700">
+
+                                Availability
+
+                            </h5>
+
+                            <p class="mt-2 text-gray-600">
+
+                                Throughout the Year
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CTA -->
+
+                    <div class="flex flex-wrap gap-5 mt-12">
+
+                        <a href="contact.html"
+                            class="px-8 py-4 rounded-full bg-green-700 text-white font-semibold hover:bg-green-800 duration-300">
+
+                            Send Enquiry
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--PRODUCT 06-->
+    <section id="jowar" class="relative py-28 overflow-hidden">
+
+        <!-- Background Image -->
+        <img src="images/footer bg.png" class="absolute inset-0 w-full h-full object-cover">
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0B2E1B]/95 via-[#184A2B]/85 to-[#0B2E1B]/95"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                <!-- Left Content -->
+
+                <div>
+
+                    <span
+                        class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-semibold">
+
+                        🌾 Premium Cereal Grain
+
+                    </span>
+
+                    <h2 class="mt-8 text-5xl lg:text-6xl font-bold text-white leading-tight">
+
+                        Jowar
+
+                        <span class="text-lime-300">
+
+                            (Sorghum)
+
+                        </span>
+
+                    </h2>
+
+                    <p class="mt-8 text-lg leading-9 text-gray-200">
+
+                        Our premium quality Jowar (Sorghum) is sourced from reliable
+                        farms and processed under strict quality standards. Rich in
+                        nutrients and naturally gluten-free, it is suitable for food
+                        processing, animal feed, flour mills, and export markets.
+
+                    </p>
+
+                    <!-- Features -->
+
+                    <div class="grid sm:grid-cols-2 gap-5 mt-10">
+
+                        <div class="bg-white/10 backdrop-blur-xl rounded-2xl p-5 border border-white/10">
+
+                            ✔ Premium Quality
+
+                        </div>
+
+                        <div class="bg-white/10 backdrop-blur-xl rounded-2xl p-5 border border-white/10">
+
+                            🌱 Farm Fresh
+
+                        </div>
+
+                        <div class="bg-white/10 backdrop-blur-xl rounded-2xl p-5 border border-white/10">
+
+                            📦 Hygienic Packaging
+
+                        </div>
+
+                        <div class="bg-white/10 backdrop-blur-xl rounded-2xl p-5 border border-white/10">
+
+                            🌍 Export Ready
+
+                        </div>
+
+                    </div>
+
+                    <!-- Buttons -->
+
+                    <div class="flex flex-wrap gap-5 mt-12">
+
+                        <a href="contact.html"
+                            class="px-8 py-4 rounded-full bg-lime-400 text-green-900 font-bold hover:bg-lime-300 transition">
+
+                            Send Enquiry
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Right Side -->
+
+                <div class="relative">
+
+                    <div class="rounded-[40px] bg-white/10 backdrop-blur-xl border border-white/20 p-8 shadow-2xl">
+
+                        <img src="images/Jowar (Sorghum).jpg" class="w-full rounded-3xl h-[420px] object-cover">
+
+                        <div class="grid grid-cols-2 gap-5 mt-8">
+
+                            <div class="bg-white rounded-2xl p-5 text-center">
+
+                                <h4 class="text-3xl font-bold text-green-700">
+
+                                    100%
+
+                                </h4>
+
+                                <p class="mt-2 text-gray-600">
+
+                                    Natural
+
+                                </p>
+
+                            </div>
+
+                            <div class="bg-white rounded-2xl p-5 text-center">
+
+                                <h4 class="text-3xl font-bold text-green-700">
+
+                                    Bulk
+
+                                </h4>
+
+                                <p class="mt-2 text-gray-600">
+
+                                    Supply
+
+                                </p>
+
+                            </div>
+
+                            <div class="bg-white rounded-2xl p-5 text-center">
+
+                                <h4 class="text-3xl font-bold text-green-700">
+
+                                    Export
+
+                                </h4>
+
+                                <p class="mt-2 text-gray-600">
+
+                                    Quality
+
+                                </p>
+
+                            </div>
+
+                            <div class="bg-white rounded-2xl p-5 text-center">
+
+                                <h4 class="text-3xl font-bold text-green-700">
+
+                                    Year
+
+                                </h4>
+
+                                <p class="mt-2 text-gray-600">
+
+                                    Round Supply
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Floating Badge -->
+
+                    <div class="hidden lg:block absolute -top-8 -right-8 bg-lime-400 rounded-3xl shadow-2xl px-8 py-6">
+
+                        <h3 class="text-3xl font-bold text-green-900">
+
+                            🌍 Export
+
+                        </h3>
+
+                        <p class="mt-2 text-green-900">
+
+                            Worldwide Supply
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--FOOTER CTA -->
+    <footer class="relative overflow-hidden bg-[#0B3D22] text-white">
+
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="images/footer bg.png" alt="Footer Background" class="w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-[#0B3D22]/75"></div>
+        </div>
+
+        <!-- Blur Effects -->
+        <div class="absolute -top-24 -left-24 w-80 h-80 bg-green-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-lime-400/10 rounded-full blur-3xl"></div>
+
+        <div class="relative">
+
+            <!--CTA-->
+
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 pt-16">
+
+                <div
+                    class="rounded-[35px] bg-gradient-to-r from-green-700 via-green-600 to-lime-600 p-10 lg:p-14 shadow-2xl">
+
+                    <div class="flex flex-col lg:flex-row items-center justify-between gap-8">
+
+                        <div>
+
+                            <span class="inline-flex px-5 py-2 rounded-full bg-white/20 backdrop-blur-md font-semibold">
+
+                                🌍 Domestic & Global Export
+
+                            </span>
+
+                            <h2 class="mt-6 text-3xl lg:text-5xl font-bold leading-tight">
+
+                                Ready To Source Premium
+                                Agro Products?
+
+                            </h2>
+
+                            <p class="mt-5 text-green-100 max-w-2xl leading-8">
+
+                                Partner with AAS Agro Products for premium-quality
+                                agricultural commodities, competitive pricing,
+                                export-standard packaging and timely delivery.
+
+                            </p>
+
+                        </div>
+
+                        <div class="flex flex-wrap gap-4">
+
+                            <a href="contact.html"
+                                class="px-8 py-4 rounded-full bg-white text-green-700 font-bold hover:scale-105 transition duration-300">
+
+                                Get Free Quote
+
+                            </a>
+
+                            <a href="tel:+918074303825"
+                                class="px-8 py-4 rounded-full border-2 border-white hover:bg-white hover:text-green-700 transition duration-300 font-semibold">
+
+                                Call Now
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--FOOTER-->
+
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-12">
+
+                    <!-- Company -->
+
+                    <div>
+
+                        <img src="images/logo1.png" alt="AAS Agro Products" class="h-16 mb-6">
+
+                        <p class="text-gray-300 leading-8">
+
+                            AAS Agro Products is a trusted supplier of premium
+                            agricultural products serving both domestic and
+                            international markets with quality, reliability
+                            and customer satisfaction.
+
+                        </p>
+
+                    </div>
+
+                    <!-- Quick Links -->
+
+                    <div>
+
+                        <h3 class="text-2xl font-bold mb-8">
+
+                            Quick Links
+
+                        </h3>
+
+                        <ul class="space-y-4">
+
+                            <li>
+
+                                <a href="index.html" class="text-gray-300 hover:text-lime-300 transition">
+
+                                    Home
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="about.html" class="text-gray-300 hover:text-lime-300 transition">
+
+                                    About Us
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="products.html" class="text-gray-300 hover:text-lime-300 transition">
+
+                                    Products
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="why-us.html" class="text-gray-300 hover:text-lime-300 transition">
+
+                                    Why Choose Us
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="contact.html" class="text-gray-300 hover:text-lime-300 transition">
+
+                                    Contact
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!--PRODUCTS -->
+
+                    <div>
+
+                        <h3 class="text-2xl font-bold mb-8">
+
+                            Our Products
+
+                        </h3>
+
+                        <ul class="space-y-4">
+
+                            <li>
+                                <a href="products.html#tamarind-seed"
+                                    class="text-gray-300 hover:text-lime-300 transition flex items-center gap-3">
+
+                                    <span>🌿</span> Tamarind with Seeds
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#tamarind-without"
+                                    class="text-gray-300 hover:text-lime-300 transition flex items-center gap-3">
+
+                                    <span>🌿</span> Tamarind without Seeds
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#flowers"
+                                    class="text-gray-300 hover:text-lime-300 transition flex items-center gap-3">
+
+                                    <span>🌸</span> Tamarind Flowers
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#maize"
+                                    class="text-gray-300 hover:text-lime-300 transition flex items-center gap-3">
+
+                                    <span>🌽</span> Maize
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#soapnuts"
+                                    class="text-gray-300 hover:text-lime-300 transition flex items-center gap-3">
+
+                                    <span>🥜</span> Soapnuts
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="products.html#jowar"
+                                    class="text-gray-300 hover:text-lime-300 transition flex items-center gap-3">
+
+                                    <span>🌾</span> Jowar (Sorghum)
+
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!--CONTACT INFO-->
+
+                    <div>
+
+                        <h3 class="text-2xl font-bold mb-8">
+
+                            Contact Info
+
+                        </h3>
+
+                        <div class="space-y-6">
+
+                            <div class="flex items-start gap-4">
+
+                                <div class="w-12 h-12 rounded-xl bg-green-700 flex items-center justify-center">
+
+                                    📍
+
+                                </div>
+
+                                <p class="text-gray-300 leading-7">
+
+                                    Ramabhadrapuram Post,
+                                    Vizianagaram District,
+                                    Andhra Pradesh - 535578,
+                                    India
+
+                                </p>
+
+                            </div>
+
+                            <div class="flex items-center gap-4">
+
+                                <div class="w-12 h-12 rounded-xl bg-green-700 flex items-center justify-center">
+
+                                    📞
+
+                                </div>
+
+                                <a href="tel:+918074303825" class="text-gray-300 hover:text-lime-300">
+
+                                    +91 8074303825
+
+                                </a>
+
+                            </div>
+
+                            <div class="flex items-center gap-4">
+
+                                <div class="w-12 h-12 rounded-xl bg-green-700 flex items-center justify-center">
+
+                                    ✉
+
+                                </div>
+
+                                <a href="mailto:rajeevgupta2329@gmail.com"
+                                    class="text-gray-300 hover:text-lime-300 break-all">
+
+                                    rajeevgupta2329@gmail.com
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--COPYRIGHT-->
+
+                <div class="border-t border-white/10 mt-10 py-6">
+
+                    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-5">
+
+                        <p class="text-gray-400 text-center md:text-left">
+
+                            © 2026 <span class="font-semibold text-white">AAS Agro Products</span>.
+                            All Rights Reserved.
+
+                        </p>
+
+                        <p class="text-gray-400 text-center">
+
+                            Designed & Developed with Trust ❤️
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!--BACK TO TOp-->
+
+                <a href="#"
+                    class="fixed bottom-6 right-8 z-50 w-14 h-14 rounded-full bg-gradient-to-r from-green-600 to-lime-500 text-white flex items-center justify-center shadow-2xl hover:scale-110 transition duration-300">
+
+                    ↑
+
+                </a>
+            </div>
+
+        </div>
+
+        </div>
+
+    </footer>
+
+    <script>
+
+        const menuBtn = document.getElementById("menuBtn");
+        const closeBtn = document.getElementById("closeMenu");
+        const mobile = document.getElementById("mobileMenu");
+        const overlay = document.getElementById("overlay");
+
+        menuBtn.onclick = () => {
+
+            mobile.style.right = "0";
+            overlay.classList.remove("hidden");
+
+        }
+
+        closeBtn.onclick = () => {
+
+            mobile.style.right = "-100%";
+            overlay.classList.add("hidden");
+
+        }
+
+        overlay.onclick = () => {
+
+            mobile.style.right = "-100%";
+            overlay.classList.add("hidden");
+
+        }
+
+    </script>
+</body>
+</html>
